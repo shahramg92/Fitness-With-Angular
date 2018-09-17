@@ -1,5 +1,6 @@
 import { Component, OnInit, } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 import { TrainingService } from '../training.service';
 import { Exercise } from '../exercise.model';
@@ -15,7 +16,7 @@ export class NewTrainingComponent implements OnInit {
   constructor(private trainingService: TrainingService) { }
 
   ngOnInit() {
-    this.exercises = this.trainingService.getAvailableExercises();
+
   }
 
   onStartTraining(form: NgForm) {
