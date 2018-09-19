@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/from';
 
 import { Exercise } from './exercise.model';
 import { UIService } from '../shared/ui.service';
