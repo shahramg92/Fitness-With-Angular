@@ -7,8 +7,8 @@ export class SetAuthenticated implements Action {
   readonly type = SET_AUTHENTICATED;
 }
 
-export class SetUnathenticated implements Action {
+export class SetUnauthenticated implements Action {
   readonly type = SET_UNAUTHENTICATED;
 }
 
-export type AuthActions = SetAuthenticated | SetUnathenticated;
+export type AuthActions = SetAuthenticated | SetUnauthenticated;

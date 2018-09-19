@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireAuth } from 'angularfire2/auth';
 import { MatSnackBar } from '@angular/material';
 import { Store } from '@ngrx/store';
 
@@ -14,7 +14,6 @@ import * as Auth from './auth.actions';
 
 @Injectable()
 export class AuthService {
-
   constructor(
     private router: Router,
     private afAuth: AngularFireAuth,
@@ -30,7 +29,7 @@ export class AuthService {
         this.router.navigate(['/training']);
       } else {
         this.trainingService.cancelSubscriptions();
-        this.store.dispatch(new Auth.SetUnathenticated)();
+        this.store.dispatch(new Auth.SetUnauthenticated());
         this.router.navigate(['/login']);
       }
     });
