@@ -10,13 +10,13 @@ import { MaterialModule } from '../material.module';
     CommonModule,
     FormsModule,
     MaterialModule,
-    FlexLayoutModule,
+    FlexLayoutModule
   ],
   exports: [
     CommonModule,
     FormsModule,
     MaterialModule,
-    FlexLayoutModule,
+    FlexLayoutModule
   ]
 })
 export class SharedModule {}

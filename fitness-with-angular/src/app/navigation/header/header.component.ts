@@ -9,7 +9,7 @@ import { AuthService } from '../../auth/auth.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-  @Output() sideNavToggle = new EventEmitter<void>();
+  @Output() sidenavToggle = new EventEmitter<void>();
   isAuth = false;
   authSubscription: Subscription;
 
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   onToggleSidenav() {
-    this.sideNavToggle.emit();
+    this.sidenavToggle.emit();
   }
 
   onLogout() {
@@ -32,4 +32,5 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.authSubscription.unsubscribe();
   }
+
 }
