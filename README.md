@@ -7,4 +7,4 @@ The app first asks users to sign up or they won't be able to access the differen
 
 <img src="fitness-with-angular/screenshots/1.jpg"/>
 <br>
-<img src="fitness-with-angular/screenshots/1.jpg"/>
+<img src="fitness-with-angular/screenshots/2.jpg"/>
