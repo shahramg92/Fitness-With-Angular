@@ -8,3 +8,8 @@ The app first asks users to sign up or they won't be able to access the differen
 <img src="fitness-with-angular/screenshots/1.jpg"/>
 <br>
 <img src="fitness-with-angular/screenshots/2.jpg"/>
+<br><br>
+
+After successfully signing up, the user will land on the training page. They will be able to choose from a variety of exercises to workout to, or they may click the past exercises tab in order to see their previous workouts.
+
+<img src="fitness-with-angular/screenshots/4.jpg"/>
